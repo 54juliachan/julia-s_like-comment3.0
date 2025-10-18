@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Noto Sans TC", "Noto Sans", sans-serif;
+  background: #E6F0FF;
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+}
+h2{
+  font-size: 3rem;
+  margin: 0;
+  margin-top: 1rem;
+}
+p{
+  line-height: 1.8rem;
+  margin: 0;
+}
+/*以下設定左側*/
+.font01{/*發文資訊*/
+  color: #868686;
+}
+.img01{/*文章附圖*/
+  width: 30%;
+  aspect-ratio: 5 / 6;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.img02{/*點攢&評論數*/
+  width: 1.4rem;
+}
+.imgflex{
+  display: flex;
+  gap: 0.6rem;
+}
+.button01 {
+  display: flex;
+  align-items: center;
+  width: 4.5rem;
+  gap: 0.6rem;
+  padding: 0.8rem 0.8rem;
+  border: none;
+  border-radius: 2.6rem;
+  background: #4890ED;
+  color: white;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.button01:hover {
+  background: #0056b3;
+}
+
+.bottonflex{
+  display: flex;
+  flex-direction: row;
+}
+/*以下右側*/
+.comment-box {
+  margin-top: 10px;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+input{
+  padding: 1rem 1.5rem;
+  border: none;
+  width: 70%;
+  height: 3rem;
+  border-radius: 2rem 0 0 2rem;
+}
+.botton02{
+  background-color: #4890ED;
+  border: none;
+  padding: 0 1.4rem;
+  border-radius: 0 2rem 2rem 0;
+  color: #fafafa;
+  cursor: pointer;
+}
+.user-icon{
+  width: 2rem;
+  height: 2rem;
+}
+.user-box{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.6rem;
+}
+.comment-ms{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 1rem 2rem;
+  margin: 0.2rem;
+  border-radius: 0.6rem;
+  background-color: #fafafa;
+  justify-self: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15)
+}
+.comment-ms p {
+  margin: 0.4rem 0;
+}
+.comment-list {
+  padding-top: 0.2rem;
+  
+}
+.section01{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 1.4rem 4%;
+  margin-left: 5%;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  background-color: #fafafa;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  gap: 1.2rem;
+}
+.section02{
+  width: 30%;
+  height: 100%;
+  margin: 0 1%;
+  margin-top: 2rem;
+  background-color: #E6F0FF;
+  
+}

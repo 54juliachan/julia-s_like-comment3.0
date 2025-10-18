@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Julia's Like&Comment</title>
+  
+</head>
+<body>
+  <section class="section01">
+    <h2>#請益 如何中發票一千萬</h2>
+    <p class="font01">提問者 Julia Chan·2025/10/10</p>
+    <p>
+      我養的小丑魚被外星人綁架了，剛剛收到傳簡訊說他們不收贖金，
+      要求我在下次發票開獎當天交出中獎一千萬的發票。雖然我跟小丑魚只認識一個禮拜，
+      但他在我心中已經像家人一樣重要，如果就這麼失去它我一定會從此一蹶不振，
+      從此以後都不想上班也不想寫作業，人生就這麼毀了，請各位一定要幫幫我。
+      如果建議有用真的中獎了請一杯麥香，謝謝。
+    </p>
+    <div class="imgflex">
+      <img class="img01" src="img\chat.png" alt="">
+      <img class="img01" src="img\alien.png" alt="">
+    </div>
+    <div class="bottonflex">
+      <button class="button01" id="likeBtn">
+        <img class="img02" src="img/like.png" alt="">
+        <span id="likeCount">0</span>
+      </button>
+      <button class="button01">
+        <img class="img02" src="img\comment.png" alt="">
+        <span id="commentCount">0</span>
+      </button>
+    </div>
+  </section>
+  <section class="section02">
+    <div class="comment-box">
+      <input type="text" id="commentInput" placeholder="匿名留言..." />
+      <button class="botton02" id="commentBtn">發布</button>
+    </div>
+    <div class="comment-list" id="commentList"></div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
