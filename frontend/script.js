@@ -49,4 +49,5 @@ document.getElementById("commentBtn").addEventListener("click", async () => {
   document.getElementById("commentInput").value = "";
 });
 
+// 初始化
 loadData();

@@ -1,9 +1,9 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from mangum import Mangum  # 讓 FastAPI 在 Serverless 運作
+from mangum import Mangum  # 讓 FastAPI 可以 Serverless
 
-app = FastAPI(title="Like & Comment API")
+app = FastAPI()
 
 # 允許跨域
 app.add_middleware(
@@ -14,7 +14,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Demo 用字典存資料，刷新會重置
+# 用字典存資料 (刷新會重置)
 data = {
     "likes": 0,
     "comments": [],
@@ -32,7 +32,7 @@ def add_like():
     data["likes"] += 1
     return data
 
-# 留言資料模型
+# 留言模型
 class Comment(BaseModel):
     text: str
 
@@ -43,5 +43,5 @@ def add_comment(comment: Comment):
     data["commentCount"] = len(data["comments"])
     return data
 
-# Vercel Serverless handler
+# Serverless handler
 handler = Mangum(app)
