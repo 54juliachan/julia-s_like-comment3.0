@@ -1,4 +1,4 @@
-const API_URL = "/api"; // Serverless route
+const API_URL = "/api";
 
 // 取得貼文資料
 async function loadData() {
@@ -33,7 +33,7 @@ document.getElementById("likeBtn").addEventListener("click", async () => {
   document.getElementById("likeCount").textContent = data.likes;
 });
 
-// 發送留言
+// 發布留言
 document.getElementById("commentBtn").addEventListener("click", async () => {
   const text = document.getElementById("commentInput").value.trim();
   if (!text) return;
@@ -49,5 +49,4 @@ document.getElementById("commentBtn").addEventListener("click", async () => {
   document.getElementById("commentInput").value = "";
 });
 
-// 初始化
 loadData();
